@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#353b48"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#353b48"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="119dp"
+        android:layout_height="85dp"
         android:orientation="horizontal"
-        android:paddingTop="50dp">
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+        android:paddingTop="25dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,10 +27,6 @@
             android:textSize="36sp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -131,81 +127,112 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="47dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|fill_vertical"
+        android:text="House : "
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:entries="@array/house_types"
+        android:spinnerMode="dropdown" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="47dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
+
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="95dp"
-            android:layout_height="32dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="left|fill_vertical"
+            android:text="Payment : "
+            android:textSize="18sp" />
 
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="273dp"
+            android:layout_width="193dp"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:entries="@array/house_types"
+            android:entries="@array/payment"
             android:spinnerMode="dropdown" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:orientation="horizontal">
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
+    android:layout_width="wrap_content"
+    android:layout_height="47dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|fill_vertical"
+        android:text="Contact : "
+        android:textSize="18sp" />
+
+    <Spinner
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:entries="@array/contact"
+        android:spinnerMode="dropdown" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/Gender" />
+            android:gravity="left|fill_vertical"
+            android:text="Gender : "
+            android:textSize="18sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <Spinner
+            android:layout_width="193dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            android:text="@string/GenderFemale" />
+            android:entries="@array/Gender"
+            android:spinnerMode="dropdown" />
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
 
         <Space
             android:layout_width="wrap_content"
@@ -227,3 +254,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>
