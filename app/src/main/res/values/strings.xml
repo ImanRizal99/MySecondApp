@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hi</string>
+    <string name="confirm">CONFIRM NOW</string>
+    <string name="testString">Test</string>
+    <string name="Title">Registration Form</string>
+    <string name="GenderMale">Male</string>
+    <string name="Gender">Male</string>
+    <string name="GenderFemale">Female</string>
+    <string name="ExtraTitle">Great HomeSearch</string>
+
+    <string-array name="house_types">
+        <item>Bungalow</item>
+        <item>Duplex House</item>
+        <item>Condo</item>
+        <item>Mansion</item>
+        <item>Cottage</item>
+    </string-array>
+
+</resources>
